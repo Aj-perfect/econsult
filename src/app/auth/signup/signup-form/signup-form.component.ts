@@ -28,7 +28,8 @@ export class SignupFormComponent implements OnInit {
   onSubmit(){
     console.log(this.signUpForm.value);
     this.httpClient.post(
-      "https://e-consult-angular-app-default-rtdb.firebaseio.com/users.json",
+      "https://e-consult-app-default-rtdb.firebaseio.com/users.json",
+      
       this.signUpForm.value
       ).subscribe(
         (response) => {
